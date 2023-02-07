@@ -1,3 +1,17 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     text-align:center;
+}
+a:hover{
+    text-decoration: none;
+    color: black#000;
+}
+a:visited{
+    color: purple;
+
+}
+a:link{
+    color: brown;
 }
