@@ -3,6 +3,7 @@ html{
 }
 body{
     text-align:center;
+    background-color: bisque;
 }
 a:hover{
     text-decoration: none;
@@ -14,4 +15,34 @@ a:visited{
 }
 a:link{
     color: brown;
+}
+table,th,td{
+    border:1px solid black;
+    border-collapse:collapse;
+}
+.demo{
+    font-size:20px;
+}
+.demo2{
+    font-weight:bold;
+}
+.submit-btn{
+    background-color: blue;
+    color: black;
+    padding: 20px 50px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .8s;
+    border-radius: 10px;
+}
+.submit-btn:hover{
+    background-color: red;
+    color: #000;
+
+}
+@media(max-width:600px){
+body{
+    background-color: aqua;
+}
 }
