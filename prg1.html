@@ -124,7 +124,7 @@
   <li>good dressing sense</li>
 </ol>
 <p style="font-size:25px;">Instagram profile</p> 
-<iframe src="https://www.instagram.com/chinthan_k_06/" width="500px" height="500px"></iframe>
+<!-- <iframe src="https://www.instagram.com/chinthan_k_06/" width="500px" height="500px"></iframe> -->
 <!-- <p class="demo demo2">class attribute</p>  
 <div class="demo demo2">class attribute</div>   -->
 <p style="font-size:25px;">If interested please give your details below</p> 
@@ -166,31 +166,108 @@
 <input type="submit" value="Submit" class="submit-btn">
 </form>
 <p id="demo"></p>
+<button onclick="myfunction(10,20)">Add 10 and 20</button>
+<button onclick="myfunction(100,200)">Add 100 and 200</button>
 
 <script>
+function myfunction(x,y){
+  alert(x+y);
+}
   /////////////////////////
-  // var a=10;           //
+  //var a=10;            //
   // let b=15;           //
   // const c=20;         //
   // const total=a*b*c;  //
   // console.log(a,b,c); //
   /////////////////////////
-  const a=15;
+  const a=5;
+  if(a===5){
+    // console.log("a is equal to 5");
+  }else if(a===10)
+  {
+    // console.log("a is equal to 10");
+  }else
+   {
+    // console.log("doea not match");
+  }
+  
   const mul=a*10
-  console.log(mul);
-  document.getElementById("demo").innerHTML=mul;
+  // console.log(mul);s
+  // document.getElementById("demo").innerHTML=mul;
   var x=5;
   x +=10;
-  console.log(x);
+  // console.log(x);
 
   const str1 ="hello";
-  const str2="world!";
-  console.log(str1+" "+str2);
-  console.log(str1+" "+x);
-  console.log(a==20);
-  console.log(a!==20);
-  console.log(a<20);
-  console.log(a>20);
+  const str2 ="world!";
+  /////////////////////////////////
+  // console.log(str1+" "+str2); //
+  // console.log(str1+" "+x);    //
+  // console.log(a==20);         //  
+  // console.log(a!==20);        //
+  // console.log(a<20);          //
+  // console.log(a>20);          //
+  // console.log(a===x && a===10)//
+  // console.log(a===x || a===10)//
+  // console.log(a===x && a===10)//
+  // console.log(!( a===10))     //
+  /////////////////////////////////
+  var bool=true;
+  var arr=[1,2,3,100,"hello",true];
+  // console.log(arr);
+  arr.pop();
+  // console.log(arr);
+  arr.push("world");
+  // console.log(arr);
+  arr.map((item)=>{
+    // console.log(item);
+  });
+  var obj={name:"demo",color:"orange",year:2023, isactivated:true};
+  // console.log(obj);
+  var date=new Date();
+  // console.log(date);
+  switch (new Date().getDay()){
+    // case 0:
+    //   console.log("sunday");
+    //   break;
+    // case 1:
+    //   console.log("monday");
+    //   break;
+    // case 2:
+    //   console.log("tuesday");
+    //   break;
+    // case 3:
+    //   console.log("wednesday");
+    //   break;
+    // case 4:
+    //   console.log("thursday");
+    //   break;
+    // case 5:
+    //   console.log("friday");
+    //   break;
+    // case 6:
+    //   console.log("saturday");
+    //   break;
+    // default:
+    //   console.log("no match found");
+    //   break;
+  }
+    
+</script>
+<script>
+  var text="Hello world!";
+  console.log(text.search("wo rld"));
+
+  var text2 ="hello world!";
+  console.log(text2);
+  console.log(text2.replace("world","universe"));
+</script>
+<script>
+  try{
+    allert("spelling mistake in alert method");
+  }catch(error){
+    console.log(error);
+  }
 </script>
 
 <noscript>Sorry, your browser does not support script</noscript>
